@@ -1,0 +1,57 @@
+
+
+ 
+                         angular- front end developer    
+             ..................................................
+    
+                       basic commands in angular
+ ----------------------------------------------------------------------------
+
+     1.to create an angular project:ng new project-name
+     2.to run an angular project:ng serve
+     3.to generate component:ng g c component-name
+     4.to generate service: ng g s serivice-folder/service-name
+
+
+                          basic concepts in angular
+           --------------------------------------------------------------------
+
+     1.module - to import 3rd party libraries , also used to hold components , root module: app module
+
+     2.component - html,css,ts/component file ,also have a selector , root component
+
+     3.selector - to replace selector tag with its html page
+
+     4.decorator - to hold meta data , starts with @
+
+     5.Set up path for component - to view a component in another webpage
+        -use app-routingmodule.ts file
+        -use router-outlet selector in root component - to navigate according to the user requested path
+
+     6.Data Binding: data sharing within a component
+
+       6.1 one way binding:data sharing in one direction
+          6.1.1 ts(component) to html file(view)
+             6.1.1.1 string interpolation{{class property-name}}
+             6.1.1.2 property Binding : [attribute-name]="property-name"
+          6.1.2 html(view) to ts (component)
+             6.1.2.1 Event binding:(Event-name)="function call"
+             6.1.2.2 Event binding using $event:(Event-name)="function name($event)"
+             6.1.2.3 Event binding using template reference variable : #variable-name
+
+       6.2 Two way binding : Data sharing in both direction
+          6.2.1 ngModel:import formsmodule in appmodule
+                  [(ngModel)]="class property"    
+     7.Angular Forms
+       7.1 Template driven forms
+       7.2 Model driven forms 
+     8.Dependency Injection: To share data between dependent classes 
+        - constructor(access-specifier variable-name:dependent Class-name){} 
+     9.Angular Services
+     10.Angular Directives : DOM manipulation
+         10.1 Component Directive
+         10.2 Structural Directive
+             - *ngFor = "let variable-name of array-name"
+    11.parent child data sharing
+        -child to parent communication: @output decorator
+        -parent to child communication:  @input decorator       
